@@ -11,8 +11,12 @@
       'LBRY' ?>
     <title><?php echo $title ?></title>
 
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@master/distr/fira_code.css"/>
+    <link rel="stylesheet" href="/components/dist/index.css"/>
+
     <?php foreach (Response::getCssAssets() as $src): ?>
-    <link rel="stylesheet" href="<?php echo $src?>">
+    <link rel="stylesheet" href="<?php echo $src?>"/>
     <?php endforeach ?>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
